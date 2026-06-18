@@ -1,0 +1,112 @@
+﻿/* Общие настройки */
+body {
+    background-color: #fcfcfc; /* Чуть мягкий белый цвет */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+/* Ограничиваем ширину сайта, чтобы на экранах 4К всё не разлетелось */
+.wrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 2200px; /* Примерная высота всей твоей страницы */
+}
+
+/* Общий стиль для картинок, которые раскиданы */
+.pic {
+    position: absolute;
+    object-fit: cover;
+}
+
+/* Пример расстановки верхних фото (подбирай проценты или пиксели на глаз) */
+.pic-top-left { top: 20px; left: 10px; width: 250px; }
+.pic-top-center { top: 0px; left: 450px; width: 150px; }
+.pic-top-right { top: 30px; right: 40px; width: 110px; }
+
+/* Текст "сайт-визитка" */
+.title-block {
+    position: absolute;
+    top: 230px;
+    left: 350px;
+    text-align: center;
+}
+.title-block h1 {
+    font-size: 54px;
+    text-transform: lowercase;
+    letter-spacing: 5px; /* Растягиваем буквы */
+    margin-bottom: 5px;
+}
+.title-block p {
+    font-size: 14px;
+    max-width: 400px;
+    color: #555;
+}
+
+/* Рисунок домов (PNG) */
+.pic-houses {
+    top: 350px;
+    left: 50px;
+    width: 400px;
+    z-index: 2; /* Чтобы был поверх других элементов, если нужно */
+}
+
+/* Главное имя */
+.main-name {
+    position: absolute;
+    top: 1150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+.main-name h2 {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 12px;
+    line-height: 1.1;
+    margin: 0;
+}
+.hashtags {
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 2px;
+}
+
+/* Ссылка на работы с подчеркиванием */
+.portfolio-link {
+    position: absolute;
+    top: 1450px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.portfolio-link a {
+    font-size: 38px;
+    font-weight: bold;
+    color: #33a8ff; /* Голубой цвет */
+    text-decoration: none;
+    border-bottom: 4px solid #33a8ff;
+    padding-bottom: 5px;
+}
+
+/* Контакты в самом низу */
+.contacts {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+.contacts h3 {
+    font-size: 42px;
+    letter-spacing: 8px;
+}
+.icons a {
+    margin: 0 15px;
+    display: inline-block;
+}
+.icons img {
+    width: 30px;
+    height: 30px;
+}
